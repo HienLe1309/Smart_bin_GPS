@@ -1,5 +1,5 @@
 import axios from './customize-axios';
-const url = 'http://smartbinsawaco123.runasp.net'
+const url = 'https://smartbinsawaco123.runasp.net'
 const fetchAllUsers = (page)=>{
     return axios.get(`/api/users?page=${page}`)
 }

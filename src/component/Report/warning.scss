@@ -1,0 +1,48 @@
+.father-detail {
+  .div-father-collection { // Sửa từ .div-father-warning thành .div-father-collection (theo JSX)
+    .basic-datetime-picker {
+      .react-datetime-picker__wrapper {
+        border: 1px solid #ced4da; // Viền đơn giản
+        border-radius: 4px;
+        padding: 5px;
+        background-color: #fff;
+        font-size: 14px;
+        color: #333;
+
+        // Loại bỏ các hiệu ứng hover phức tạp
+        &:hover {
+          border-color: #80bdff;
+        }
+      }
+
+      // Ẩn các nút điều khiển không cần thiết
+      .react-datetime-picker__button {
+        display: none; // Ẩn các nút mặc định nếu cần
+      }
+
+      // Tùy chỉnh input
+      .react-datetime-picker__inputGroup {
+        input {
+          background: none;
+          border: none;
+          outline: none;
+          width: auto;
+        }
+      }
+
+      // Tùy chỉnh lịch nếu vẫn hiển thị
+      .react-calendar {
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-shadow: none; // Loại bỏ bóng
+      }
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      column-gap: 20px; // Điều chỉnh khoảng cách giữa các phần tử
+      margin-bottom: 20px;
+    }
+  }
+}

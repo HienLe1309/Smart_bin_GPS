@@ -1,23 +1,52 @@
-.father-detail{
-    display: flex;
+.fatherInfor{ 
+   
     .div-father-detail{
-        .div-detail{
-            h3{
-               
-            }
-            span{
-                font-size: 25px;
-                font-weight: 400;
-            }
-        }
         display: flex;
         column-gap: 30px;
         margin-top: 100px;
-        margin-left: 200px;
-        .changeinfor{
-            color: rgb(13, 100, 230);
-            cursor: pointer;
+        .div-detail{
+            margin-top: 10px;         
+            height: 170px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            padding: 10px; 
+            border-radius: 10px;
+            span{
+                font-size: 20px;
+                font-weight: 300;
+            }
         }
+        // .changeinfor{
+        //     color: rgb(223, 227, 233);
+        //     cursor: pointer;
+        // }
+
+        .div-father-infoIot{
+            flex: 40%;     
+            .inforIot{
+                display: flex;
+                .popup-item{
+                    img{
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+                .connecting{
+                    color: green;
+                }
+                .disconnect{
+                    color: red;
+                }
+
+
+                .warning{
+                    
+                        font-size: 25px;
+                    
+                }
+            }
+            
     }
+    }
+    
 
 }

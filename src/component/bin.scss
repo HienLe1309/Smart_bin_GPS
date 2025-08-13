@@ -1,109 +1,248 @@
-.father-bin{
-    width: 100%;
-    .div-img-bin{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+// .father-bins{
+//     overflow: auto;
+//     width: 100%;
 
+//     .header{
+//         display: flex;
+//         justify-content: space-between;
+//     }
+// }
+
+// .search-and-filter{
+//     width: 100%;
+//     .filter-status{
+//         width: 10%;
+//     }
+//     .filter-warning{
+//         width: 10%;
+//     }
+//     .filter-connection{
+//         width: 15%;
+//     }
+//     .filter-location{
+//         width: 20%;
+//     }
+//     .filter-available{
+//         width: 15%;
+//     }
+//     .filter-compression{
+
+//         width: 15%;
+//     }
+//     .filter-power{
+//         width: 15%;
+//     }
+//     .filter{
+        
+//         .div-input{
+//             margin-top: 10px;
+//             .compression-input{
+//                 width: 20%;
+//             }
+//         }
+        
+//         .select{
+//             width: 70%;
+//         }
+//     }
+//     display: flex;
+//     margin-top: 20px;
+//     .form-search-location{
+
+//         .form-select{
+//             width: 200px;
+//         }
+      
+//             .form-button{
+
+//             }
+        
+            
+    
+//     }
+// }
+// .table{
+//     border-radius: 20px;
+//     overflow: hidden;
+//     margin-top: 10px;
+//     thead{
+//         background-color: #8FBC8F; 
+//         tr{
+//             text-align: center;  
+            
+//             th{
+//                 vertical-align: middle;
+
+//             }
+//         }
+//     }
+//     tbody{
+//         tr{
+//             font-weight: 400;
+//             cursor: pointer;
+//             td{
+//             vertical-align: middle;
+//         }
+//         }
+        
+//     }
+    
+    
+//     td{
+//     .location{
+//         display: flex;
+//         flex-direction: column;
+//     }
+//     .fault{
+//        font-size: 30px;
+//     }
+//    .th-organic{
+//             .img-organic{
+//                     width: 50%;
+//             }
+//    }
+//     text-align: center;
+//     .connecting{
+//         color: rgb(2, 255, 14);
+//     }
+//     .disconnect{
+//         color: red;
+//     }
+//     .low{
+//         color: green;
+//     }
+//     .high{
+//         color: red;
+//     }
+//     .medium{
+//         color: yellow;
+//     }
+//     .icon-infor{
+//         font-size: 30px;
+//     }
+    
+// }
+// }
+.father-bins {
+    overflow: auto;
+    width: 100%;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .div-display-couter {
+            flex: 1;
+        }
+
+        .header-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px; // Khoảng cách giữa các nút
+        }
+    }
 }
 
-.search-and-filter{
+.search-and-filter {
     width: 100%;
-    .filter-status{
+    .filter-status {
         width: 10%;
     }
-    .filter-warning{
+    .filter-warning {
         width: 10%;
     }
-    .filter-connection{
+    .filter-connection {
         width: 15%;
     }
-    .filter-location{
+    .filter-location {
         width: 20%;
     }
-    .filter-available{
+    .filter-available {
         width: 15%;
     }
-    .filter-compression{
-
+    .filter-compression {
         width: 15%;
     }
-    .filter-power{
+    .filter-power {
         width: 15%;
     }
-    .filter{
-        
-        .div-input{
+    .filter {
+        .div-input {
             margin-top: 10px;
-            .compression-input{
+            .compression-input {
                 width: 20%;
             }
         }
-        
-        .select{
+        .select {
             width: 70%;
         }
     }
     display: flex;
     margin-top: 20px;
-    .form-search-location{
-
-        .form-select{
-                width: 200px;
+    .form-search-location {
+        .form-select {
+            width: 200px;
         }
-        .form-search-street{
-                margin-top: 20px;
-                width: 90%;
+        .form-button {
+        }
+    }
+}
+
+.table {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    thead {
+        background-color: #8FBC8F;
+        tr {
+            text-align: center;
+            th {
+                vertical-align: middle;
+            }
+        }
+    }
+    tbody {
+        tr {
+            font-weight: 400;
+            cursor: pointer;
+            td {
+                vertical-align: middle;
+            }
+        }
+    }
+    td {
+        .location {
             display: flex;
-            .form-input{
-                    width:80% ;
-            }
-            .form-button{
-
+            flex-direction: column;
+        }
+        .fault {
+            font-size: 30px;
+        }
+        .th-organic {
+            .img-organic {
+                width: 50%;
             }
         }
-            
-    
-    }
-}
-.table{
-    thead{
-        tr{
-            th{
-                text-align: center;
-            }
+        text-align: center;
+        .connecting {
+            color: rgb(2, 255, 14);
+        }
+        .disconnect {
+            color: red;
+        }
+        .low {
+            color: green;
+        }
+        .high {
+            color: red;
+        }
+        .medium {
+            color: yellow;
+        }
+        .icon-infor {
+            font-size: 30px;
         }
     }
-    margin-top: 70px;
-    td{
-    .fault{
-       font-size: 30px;
-    }
-   .th-organic{
-            .img-organic{
-                    width: 50%;
-            }
-   }
-    text-align: center;
-    .connecting{
-        color: rgb(2, 255, 14);
-    }
-    .disconnect{
-        color: red;
-    }
-    .low{
-        color: green;
-    }
-    .high{
-        color: red;
-    }
-    .medium{
-        color: yellow;
-    }
-    .icon-infor{
-        font-size: 30px;
-    }
-    
-}
 }

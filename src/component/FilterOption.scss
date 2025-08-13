@@ -1,0 +1,24 @@
+.filterOptions {
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    overflow-y: scroll;
+    position: absolute;
+    transform: translateX(0px);
+    right: 0px;
+    top: 0px;
+    background-color: aliceblue;
+    height: 90vh;
+    z-index: 2000;
+    width: 260px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  
+    .filterOptions-item {
+      margin-top: 10px;
+      display: flex;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      column-gap: 5px;
+    }
+  }

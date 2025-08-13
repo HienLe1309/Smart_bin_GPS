@@ -1,0 +1,17 @@
+.leaflet-container {
+    height: 680px;
+    width: 100%;
+  }
+
+  .infoBin{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 20px;
+    .inforBin-item{
+        flex: 30%;
+       
+    }
+    .inforBin-item-save{
+        margin-top: 50px;
+    }
+  }

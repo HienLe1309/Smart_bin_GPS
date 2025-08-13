@@ -1,21 +1,113 @@
-.father-chart{
-    display: flex;
-   width: 100%;
-        .div-select-only-fromto-char{
-            margin-left: 200px;
-            width: 60%;
-               margin-top: 70px;
-                    .div-select-fromto{
-                        display: flex;
-                        column-gap: 20px;
-                        .btn{
-                            margin-top: 35px;
-                            margin-left: 50px;
-                            height: 40px;
-                        }
-                    }
+// .fatherInfor{ 
+ 
+//   .chart-container{
+//       width: 100%;
+//       .div-father-datetime{
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
+//         .father-datetime{
+         
+//           margin-top:20px ;      
+//           display: flex;
+//           column-gap: 200px;
+//           .btn{
+//           margin-top: 5px;
+//           }
+//         }
+        
+        
+        
+//       }
+
+//       .pdf-excel{
+//           display: flex;
+//           column-gap: 20px;
+//         }  
+//       .table{
+        
+//           tbody{
+//             tr{
+//               text-align: center;
+//               th{
+//                 .fault{
+//               font-size: 30px;
+//               color: red;
+//             }
+//             .connecting{
+//               color: green
+//             }
+            
+//               }
+//             }    
+//           }
+//       }
+     
+//       .img{
+        
+//         width: 100%;
+//       }
+//   }
+  
+
+// }
+
+.fatherInfor {
+  .chart-container {
+    width: 100%;
+    .div-father-datetime {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .father-datetime {
+        margin-top: 20px;
+        display: flex;
+        column-gap: 200px;
+        .father-chart {
+          // Style cho DateTimePicker
+          .react-datetime-picker {
+            .react-datetime-picker__wrapper {
+              border: 1px solid #ccc; // Viền đơn giản
+              border-radius: 4px;
+              padding: 5px;
+              font-size: 14px;
+            }
+            .react-datetime-picker__inputGroup {
+              background: #fff; // Nền trắng
+            }
+            .react-datetime-picker__inputGroup__input {
+              outline: none; // Bỏ outline khi focus
+            }
+          }
         }
-                .father-img-chart{
-                    margin-top: 100px;
-                }
+        .btn {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .pdf-excel {
+      display: flex;
+      column-gap: 20px;
+    }
+    .table {
+      tbody {
+        tr {
+          text-align: center;
+          th {
+            .fault {
+              font-size: 30px;
+              color: red;
+            }
+            .connecting {
+              color: green;
+            }
+          }
+        }
+      }
+    }
+    .img {
+      width: 100%;
+    }
+  }
 }

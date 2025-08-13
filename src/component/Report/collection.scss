@@ -1,0 +1,35 @@
+.father-detail{ 
+  width: 100%;
+  .div-father-collection{
+    width: 100%;
+    .input-group{
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      .form-outline{
+        display: flex;
+        height: 40px;
+        margin-top: 10px;
+      }
+      .btn-see{
+        margin-top: 20px;
+      }
+    }
+
+    .table{
+      margin-top: 32px;
+      tbody{
+        tr{
+          th{
+            text-align: center;
+          }
+        }
+
+      }
+    }
+      
+  }
+  
+
+}
+

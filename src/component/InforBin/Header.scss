@@ -1,0 +1,41 @@
+.fatherInfor{
+    width: 100%;
+    height: 100vh;
+    .header-bin{ 
+                
+                display: flex;                  
+                height: 50px;  
+                border-radius: 15px;   
+                justify-content: space-between;
+                
+                .header-bin-item{ 
+                    border: 2px solid black;
+                    flex:50%;
+                    border-radius: 15px;                                                          
+                    background: #b2efb2;
+                    height: 100%;
+                    &:hover{
+                        background-color: rgb(186, 192, 188);
+                        border-radius: 15px;
+                    } 
+
+                    a{
+                        
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 25px;
+                        height: 100%;
+                        width: 100%;
+                        text-align: center;
+                        text-decoration: none;
+                        list-style: none;   
+                        color: #080808;
+                        font-size: 20px;
+                        font-weight: 500; 
+
+                                                                                                
+                                                 
+                    }
+                }
+    }
+}

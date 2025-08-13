@@ -1,0 +1,137 @@
+.fatherUser{
+    
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 246, 246);
+    border-radius: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    padding: 50px 0px;    
+    .father-wrapper{            
+            width: 35%;
+            height: 55%;
+            
+            border-radius: 30px;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            .accountInformation{
+                width: 100%;
+                background-color: rgb(216, 239, 211);
+                margin-bottom: 20px;
+                border-radius: 20px;
+                padding: 10px 10px;
+                    .accountInformation-title{
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                    .accountInformation-main{
+                            margin-bottom: 20px;
+                            .accountInformation-main-first{
+                                display: flex;
+                                margin-bottom: 10px;
+                                .label{
+                                    width: 300px;
+                                    max-width: 50%;
+                                    font-size: 18px;
+                                    color: rgba(0,0,0,.5333333333);
+                                }
+                                .value{
+                                        font-size: 18px;
+                                        font-weight: 900px;
+                                }
+                            }
+                            .accountInformation-main-second{
+                                display: flex;
+                                .label{
+                                    width: 300px;
+                                    max-width: 50%;
+                                    font-size: 18px;
+                                    color: rgba(0,0,0,.5333333333);
+                                }
+                                .value{
+                                    font-size: 18px;
+                                    font-weight: 900px;
+                                }
+                            }
+                    }
+                    .accountInformation-button{
+                        .btn{
+                            height: 50px;
+                            width: 150px;
+                            border-radius: 15px;
+                            border: 1px solid #000;
+                            font-size:20px ;  
+                            
+                            font-weight: 900px;
+                            text-align: center; 
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #c9c7c7;
+                            }
+                        }
+                       
+                        
+                    }
+            }
+            .loginInformation{
+                width: 100%;
+                background-color: rgb(216, 239, 211);
+                border-radius: 20px;
+                padding: 10px 10px;
+                    .loginInformation-title{                       
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                    .loginInformation-main{
+                        margin-bottom: 20px;
+                        .loginInformation-main-first{
+                            margin-bottom: 10px;
+                                display: flex;
+                                .label{
+                                    width: 300px;
+                                    max-width: 50%;
+                                    font-size: 18px;
+                                    color: rgba(0,0,0,.5333333333);
+                                }
+                                .value{
+                                    font-size: 18px;
+                                    font-weight: 900px;
+                                }
+                        }
+                        .loginInformation-main-second{
+                                display: flex;
+                                .label{
+                                    width: 300px;
+                                    max-width: 50%;
+                                    font-size: 18px;
+                                    color: rgba(0,0,0,.5333333333);
+                                }
+                                .value{
+                                    font-size: 18px;
+                                    font-weight: 900px;
+                                }
+                        }
+                    }
+                    .loginInformation-button{
+                        .btn{
+                            height: 50px;
+                            width: 150px;
+                            border-radius: 15px;
+                            border: 1px solid #000;
+                            font-size:20px ;  
+                            
+                            font-weight: 900px;
+                            text-align: center; 
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #c9c7c7;
+                            }
+                        }
+                    }
+            }
+    }
+}

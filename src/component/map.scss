@@ -1,4 +1,455 @@
-.leaflet-container {
-    height: 600px;
-    width: 100%;
+.father-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .div-button {
+    position: absolute;
+    top: 0;
+    left: -174px;
+    z-index: 3000;
+    min-width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+
+    .div-button-item {
+      display: flex;
+      flex-direction: column; /* Xếp các nút và checkbox theo chiều dọc */
+      align-items: center; /* Căn giữa theo chiều ngang */
+      gap: 10px; /* Khoảng cách giữa các nút và checkbox */
+    }
+
+    .amountBins {
+      color: #333;
+      font-size: 20px;
+      font-weight: 500;
+      width: 200px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #1899D6;
+      border-radius: 16px;
+      color: #000000;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      width: auto;
+      position: relative;
+
+      &::after {
+        background-clip: padding-box;
+        background-color: #1CB0F6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      &:focus {
+        user-select: auto;
+      }
+
+      &:hover:not(:disabled) {
+        filter: brightness(1.1);
+        -webkit-filter: brightness(1.1);
+      }
+
+      &:disabled {
+        cursor: auto;
+      }
+
+      &:active {
+        border-width: 4px 0 0;
+        background: none;
+      }
+    }
+
+    .stop-collection {
+      display: inline-block;
+      background-color: #ff4d4f; /* Màu đỏ cho nút "Tắt thu gom" */
+      border-radius: 16px;
+      color: #000000;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      width: 136px; /* Đặt chiều rộng cố định thành 136px */
+      position: relative;
+
+      &::after {
+        background-clip: padding-box;
+        background-color: #ff7875; /* Màu sáng hơn cho hiệu ứng */
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      &:focus {
+        user-select: auto;
+      }
+
+      &:hover:not(:disabled) {
+        filter: brightness(1.1);
+        -webkit-filter: brightness(1.1);
+      }
+
+      &:disabled {
+        cursor: auto;
+      }
+
+      &:active {
+        border-width: 4px 0 0;
+        background: none;
+      }
+    }
+
+    .algorithm-select {
+      display: inline-block;
+      background-color: #1899D6;
+      border-radius: 16px;
+      color: #000000;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 5px 10px;
+      padding-right: 25px; /* Thêm khoảng trống cho mũi tên dropdown */
+      text-align: center;
+      white-space: nowrap;
+      width: 136px; /* Đặt chiều rộng cố định thành 136px */
+      overflow: hidden; /* Ẩn nội dung tràn */
+      text-overflow: ellipsis; /* Thêm dấu ... cho văn bản dài */
+      position: relative;
+      border: none;
+      appearance: none; /* Loại bỏ giao diện mặc định của select */
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23000000" d="M2 4l4 4 4-4H2z"/></svg>'); /* Mũi tên dropdown tùy chỉnh */
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+
+      &::after {
+        background-clip: padding-box;
+        background-color: #1CB0F6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+      }
+
+      &:hover {
+        filter: brightness(1.1);
+        -webkit-filter: brightness(1.1);
+      }
+
+      option {
+        background-color: #fff;
+        color: #000;
+        font-weight: 500;
+      }
+    }
+
+    .export-excel {
+      display: inline-block;
+      background-color: #1899D6;
+      border-radius: 16px;
+      color: #000000;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      width: 136px; /* Đặt chiều rộng cố định thành 136px */
+      position: relative;
+
+      &::after {
+        background-clip: padding-box;
+        background-color: #1CB0F6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      &:focus {
+        user-select: auto;
+      }
+
+      &:hover:not(:disabled) {
+        filter: brightness(1.1);
+        -webkit-filter: brightness(1.1);
+      }
+
+      &:disabled {
+        cursor: auto;
+      }
+
+      &:active {
+        border-width: 4px 0 0;
+        background: none;
+      }
+    }
+
+    .div-button-item-checkbox {
+      display: flex;
+      flex-direction: row; /* Đảm bảo checkbox nằm ngang hàng */
+      justify-content: center; /* Căn giữa các checkbox */
+      gap: 10px; /* Khoảng cách giữa hai checkbox */
+    }
   }
+
+  .div-map {
+    .leaflet-container {
+      height: 90vh;
+      width: 100%;
+
+      .custom-div {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 1000;
+
+        .custom-image {
+          width: 300px;
+          height: 250px;
+        }
+      }
+
+      .div-icon-search {
+        position: absolute;
+        bottom: 330px;
+        transform: translateX(-5px);
+        transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        right: 0px;
+        background-color: rgb(1, 1, 1);
+        height: 50px;
+        width: 50px;
+        z-index: 1000;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .icon-search {
+          font-size: 35px;
+          color: aliceblue;
+        }
+      }
+
+      .move {
+        position: absolute;
+        bottom: 330px;
+        transform: translateX(-265px);
+        right: 0px;
+        background-color: rgb(1, 1, 1);
+        height: 50px;
+        width: 50px;
+        z-index: 1000;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+        .icon-search {
+          font-size: 35px;
+          color: aliceblue;
+        }
+      }
+
+      .leaflet-popup-content {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .div-popup {
+          background-color: #A9BA9D;
+          border-radius: 10px;
+          padding: 10px;
+          height: 250px;
+          width: 200px;
+
+          .popup-text {
+            height: 180px;
+            width: 100%;
+
+            .popup-item {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 20px;
+              height: 30px;
+
+              .text {
+                flex: 80%;
+                color: #080808;
+                font-size: 18px;
+                font-weight: 500;
+              }
+              .value{
+                font-size: 15px;
+              }
+              .icon {
+                .RED {
+                  color: red;
+                }
+                .YELLOW {
+                  color: yellow;
+                }
+                .GREEN {
+                  color: green;
+                }
+                .BLACK {
+                  color: black;
+                }
+              }
+            }
+          }
+
+          .popup-button {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  .map-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    .map-footer-item {
+      display: flex;
+      column-gap: 10px;
+
+      .map-footer-item-title {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .map-footer-item-data {
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .total {
+        color: green;
+      }
+
+      .warning {
+        color: rgb(214, 214, 45);
+      }
+
+      .full {
+        color: red;
+      }
+
+      .disconnect {
+        color: blue;
+      }
+    }
+  }
+
+  /* Media queries để điều chỉnh cho các kích thước màn hình khác nhau */
+  @media (max-width: 1200px) {
+    .div-button {
+      left: -160px; /* Giảm lề trái cho màn hình nhỏ hơn */
+      min-width: 140px;
+    }
+
+    .div-map .leaflet-container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .div-button {
+      left: -130px; /* Giảm thêm lề trái cho thiết bị di động */
+      min-width: 120px;
+      padding: 5px;
+
+      .button, .stop-collection, .algorithm-select, .export-excel {
+        font-size: 12px;
+        padding: 4px 8px;
+        width: 120px; /* Giảm chiều rộng cho phù hợp với màn hình nhỏ */
+      }
+
+      .algorithm-select {
+        padding-right: 20px; /* Giảm padding-right cho màn hình nhỏ */
+      }
+    }
+
+    .div-map .leaflet-container {
+      width: 100%;
+      height: 85vh; /* Giảm chiều cao bản đồ cho thiết bị di động */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .div-button {
+      left: -100px; /* Điều chỉnh thêm cho màn hình rất nhỏ */
+      min-width: 100px;
+
+      .button, .stop-collection, .algorithm-select, .export-excel {
+        font-size: 11px;
+        padding: 3px 6px;
+        width: 100px; /* Giảm thêm chiều rộng */
+      }
+
+      .algorithm-select {
+        padding-right: 18px; /* Giảm thêm padding-right */
+      }
+    }
+
+    .div-map .leaflet-container {
+      width: 100%;
+      height: 80vh;
+    }
+  }
+}

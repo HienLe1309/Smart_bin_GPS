@@ -1,0 +1,98 @@
+
+.div-map{
+  width: 100%;
+        .leaflet-container{
+          height: 95vh;
+          width: 100%; 
+          position: relative;         
+          @media (max-width: 768px) {
+            height: 90vh;
+            margin-top: 8vh;
+          }
+          .div-btn{
+            z-index: 3000;   
+            position: absolute;
+            top: 0px;
+            right: 0px; 
+            display: flex;
+            flex-direction: column;                  
+            .btn{
+              text-align: center;
+              margin-bottom: 10px;
+            }              
+          }
+          .leaflet-popup-content{
+            margin-left: 20px;
+            margin-right: 20px;
+               .div-popup{
+               background-color:#49fc03;
+               border-radius: 10px;
+               padding: 10px;
+               height: 170px;
+               width:  200px;
+               .popup-text{
+                     height: 120px;
+                     width: 100%;
+                     .popup-item{
+                         display: flex;
+                         justify-content: space-between;
+                         margin-bottom: 10px;
+                         height: 30px;
+                       .text{
+                         flex: 80%;
+                         color: #080808;
+                         font-size: 18px;
+                         font-weight: 500;
+                       }
+                       .icon{
+                         .RED{
+                           color:red ;
+                         }
+                         .YELLOW{
+                           color: yellow;
+                         }
+                         .GREEN{
+                           color: green;
+                         }
+                         .BLACK{
+                          color: black;
+                         }
+                       }
+                     
+                     }
+               }
+             .popup-button{
+                   height: 30px;
+                   display: flex;
+                   justify-content: center;
+             }
+           }
+          }
+        }     
+}
+
+
+.RED {
+  font-size: 32px; // Kích thước lớn nhất
+  color: red;
+}
+
+.YELLOW {
+  font-size: 32px;
+  color: orange;
+}
+
+.GREEN {
+  font-size: 32px;
+  color: green;
+}
+.custom-div {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1000;
+   .custom-image {
+  width: 200px;
+  height: 200px;
+  }
+}

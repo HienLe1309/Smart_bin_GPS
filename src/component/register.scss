@@ -1,0 +1,109 @@
+.modal{
+    .containerRegister{
+      margin-top: 0px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+       .wrapperRegister{
+        width: 95%;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+         .title{
+            height: 70px;
+            background: #17B169;
+            border-radius: 5px 5px 0 0;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form {
+          padding: 30px 25px 25px 25px;
+        
+          .row {
+            display: flex;
+            flex-direction: column; // Xếp label và input theo chiều dọc
+            align-items: flex-start;
+            margin-bottom: 15px;
+            position: relative;
+        
+            label {
+              font-size: 16px;
+              font-weight: 500;
+              color: #333;
+              margin-bottom: 5px; // Tạo khoảng cách giữa label và input
+            }
+        
+            input {
+              height: 40px;
+              width: 100%;
+              outline: none;
+              padding-left: 10px; // Giữ khoảng cách giữa text và mép trái input
+              border-radius: 5px;
+              border: 1px solid lightgrey;
+              font-size: 16px;
+              transition: all 0.3s ease;
+        
+              &::placeholder {
+                color: #999;
+              }
+        
+              &:focus {
+                border-color: #17b169;
+                box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+              }
+            }
+            .button-login{
+                    appearance: none;
+                    backface-visibility: hidden;
+                    background-color: #27ae60;
+                    border-radius: 8px;
+                    border-style: none;
+                    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+                    box-sizing: border-box;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: normal;
+                    line-height: 1.5;
+                    outline: none;
+                    overflow: hidden;
+                    padding: 13px 20px;
+                    position: relative;
+                    text-align: center;
+                    text-decoration: none;
+                    transform: translate3d(0, 0, 0);
+                    transition: all .3s;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    vertical-align: top;
+                    white-space: nowrap;
+                  
+                  
+                  &:hover {
+                    background-color: #1e8449;
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-duration: .35s;
+                  }
+                  
+                  &:active {
+                    transform: translateY(2px);
+                    transition-duration: .35s;
+                  }
+                  
+                  &:hover {
+                    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+                  }
+            }
+          }
+        }        
+      }
+    }
+  }

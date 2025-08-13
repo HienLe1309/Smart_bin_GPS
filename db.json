@@ -1,55 +1,940 @@
 {
-    "cities":[
-     {
-         "street":"Nguyen Du",
-         "lat": "10.88033014049821",
-         "lng": "106.79408562083415",
-         "center":{
-             "lat":"10.87996296165637",
-             "lng":"106.79189646343463"
-         },
-         "zoom":17
-     },
-     {
-         "street":"Nguyen Du",
-         "lat": "10.879710097959782",
-         "lng": "106.78840083216822",
-         "center":{
-             "lat":"10.87996296165637",
-             "lng":"106.79189646343463"
-         },
-         "zoom":17
-     },
-     {
-         "street":"Hai Thuong Lan Ong",
-         "lat": "10.885534864187631",
-         "lng": "106.79279798571801",
-         "center":{
-             "lat":"10.885534864187631",
-             "lng":"106.79279798571801"
-         },
-         "zoom":20
-     },
-     {
-         "street":"Ho Xuan Huong",
-         "lat": "10.881257304408376",
-         "lng": "106.78517947794765",
-         "center":{
-             "lat":"10.881257304408376",
-             "lng":"106.78517947794765"
-         },
-         "zoom":20
-     },
-     {
-         "street":"Le Quy Don",
-         "lat": "10.885197718848003",
-         "lng": "106.79996582119774",
-         "center":{
-             "lat":"10.885197718848003",
-             "lng":"106.79996582119774"
-         },
-         "zoom":20
-     }
- 
- ]
- }
+  "cities": [
+    {
+      "id": "d711",
+      "district_name": "Quận 10",
+      "street_name": "Nguyễn Tri Phương",
+      "lat": 10.766219102740443,
+      "lng": 106.66737556457521,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "HIGH"    
+      },
+      "compression": {
+        "Organic": 4,
+        "Inorganic_recyclables": 5,
+        "Non_recyclables_inorganic": 7
+      },
+      "maintenance_date": "1-6-2024",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": true
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "0862",
+      "district_name": "Quận 10",
+      "street_name": "Lê Đại Hành",
+      "lat": 10.76515983265321,
+      "lng": 106.65488207603921,
+      "power": "90%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 4,
+        "Inorganic_recyclables": 9,
+        "Non_recyclables_inorganic": 9
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "f6a2",
+      "district_name": "Quận 10",
+      "street_name": "Cộng Hòa",
+      "lat": 10.797084912537064,
+      "lng": 106.64561479905714,
+      "power": "95%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 5,
+        "Inorganic_recyclables": 6,
+        "Non_recyclables_inorganic": 1
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "4065",
+      "district_name": "Quận 10",
+      "street_name": "Trường Sa",
+      "lat": 10.787740977537716,
+      "lng": 106.67211234569551,
+      "power": "50%",
+      "available": {
+        "Organic": "MEDIUM",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 1,
+        "Inorganic_recyclables": 2,
+        "Non_recyclables_inorganic": 3
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "disconnect",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "abf5",
+      "district_name": "Quận 10",
+      "street_name": "Lý Thái Tổ",
+      "lat": 10.767784286052963,
+      "lng": 106.6705459356308,
+      "power": "60%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 1,
+        "Inorganic_recyclables": 6,
+        "Non_recyclables_inorganic": 9
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "disconnect",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": true
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "bfca",
+      "district_name": "Quận 10",
+      "street_name": "Trường Chinh",
+      "lat": 10.79628290110541,
+      "lng": 106.64711459711619,
+      "power": "65%",
+      "available": {
+        "Organic": "MEDIUM",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 4,
+        "Inorganic_recyclables": 1,
+        "Non_recyclables_inorganic": 7
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": true,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "9dca",
+      "district_name": "Quận 10",
+      "street_name": "Võ Thị Sáu",
+      "lat": 10.77960985263134,
+      "lng": 106.68380677700043,
+      "power": "100%",
+      "available": {
+        "Organic": "MEDIU",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 5,
+        "Inorganic_recyclables": 7,
+        "Non_recyclables_inorganic": 8
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "e031",
+      "district_name": "Quận 10",
+      "street_name": "Nguyễn Văn Trỗi",
+      "lat": 10.801532295898939,
+      "lng": 106.66549603845014,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "2372",
+      "district_name": "Quận 10",
+      "street_name": "Hoàng Văn Thụ",
+      "lat": 10.797220864347175,
+      "lng": 106.65768799606126,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "2c31",
+      "district_name": "Quận 10",
+      "street_name": "Thoại Ngọc Hầu",
+      "lat": 10.785263194741063,
+      "lng": 106.64079065869875,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "e63c",
+      "district_name": "Quận 10",
+      "street_name": "Hoàng Sa",
+      "lat": 10.788551443234974,
+      "lng": 106.66807418012976,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "04bc",
+      "district_name": "Quận 10",
+      "street_name": "Lũy Bán Bích",
+      "lat": 10.789711806820026,
+      "lng": 106.64026983597589,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "dde3",
+      "district_name": "Quận 10",
+      "street_name": "Thoại Ngọc Hầu",
+      "lat": 10.783319738527467,
+      "lng": 106.63809224788935,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "ac7b",
+      "district_name": "Quận 10",
+      "street_name": "Thoại Ngọc Hầu",
+      "lat": 10.784347326683477,
+      "lng": 106.63941183557807,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "MEDIUM"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "14-1-2022",
+      "connection": "connected",
+      "installation_date": "14-1-2021",
+      "last_collection": "14-1-2024 23:24:15",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "725b",
+      "district_name": "Quận 10",
+      "street_name": "Âu Cơ",
+      "lat": 10.782634677846925,
+      "lng": 106.64282262325288,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "1/2/2004",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": true,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "e844",
+      "district_name": "Quận 10",
+      "street_name": "Tân Sơn Nhì",
+      "lat": 10.800675494667306,
+      "lng": 106.63294085842678,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "1/2/2004",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": true
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "04a7",
+      "district_name": "Quận 10",
+      "street_name": "Lũy Bán Bích",
+      "lat": 10.792235925011008,
+      "lng": 106.63773179054262,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "1/1/2003",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": true
+        },
+        "Non_recyclables_inorganic": {
+          "door": true,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "bf7e",
+      "district_name": "Quận 10",
+      "street_name": "D8",
+      "lat": 10.775428798475586,
+      "lng": 106.66095463243407,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "1/1/2004",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": true,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": true,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "29d2",
+      "district_name": "Quận 10",
+      "street_name": "Lý Thường Kiệt",
+      "lat": 10.772785440177838,
+      "lng": 106.65755381524032,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "2/3/2001",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": true,
+          "compress": true
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": true,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "5e75",
+      "district_name": "Quận 10",
+      "street_name": "Bắc Hải",
+      "lat": 10.779923929926104,
+      "lng": 106.65820809906306,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "4/5/2009",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "2849",
+      "district_name": "Quận 10",
+      "street_name": "Thành Thái",
+      "lat": 10.778970103424262,
+      "lng": 106.66077788437678,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "6/7/2009",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "e40f",
+      "district_name": "Quận 10",
+      "street_name": "Tô Hiến Thành",
+      "lat": 10.772182565678145,
+      "lng": 106.66020372919724,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "9/9/2000",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "4718",
+      "district_name": "Quận 10",
+      "street_name": "3/2",
+      "lat": 10.770313858054108,
+      "lng": 106.67191922664642,
+      "power": "100%",
+      "available": {
+        "Organic": "HIGH",
+        "Inorganic_recyclables": "HIGH",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "1/1/2024",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "4830",
+      "district_name": "Quận 10",
+      "street_name": "Lý Thường Kiệt",
+      "lat": 10.774938703964445,
+      "lng": 106.65695884545256,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "2/2/2011",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "f449",
+      "district_name": "Quận 10",
+      "street_name": "3/2",
+      "lat": 10.777227913119482,
+      "lng": 106.68275535106659,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "1/2/2004",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    },
+    {
+      "id": "6b0e",
+      "district_name": "Quận 10",
+      "street_name": "Tô Hiến Thành",
+      "lat": 10.774917624528864,
+      "lng": 106.66243009817968,
+      "power": "100%",
+      "available": {
+        "Organic": "LOW",
+        "Inorganic_recyclables": "LOW",
+        "Non_recyclables_inorganic": "LOW"
+      },
+      "compression": {
+        "Organic": 11,
+        "Inorganic_recyclables": 12,
+        "Non_recyclables_inorganic": 13
+      },
+      "maintenance_date": "Chưa sửa chữa",
+      "connection": "connected",
+      "installation_date": "1/1/2003",
+      "last_collection": "Chưa có",
+      "warning": {
+        "Organic": {
+          "door": false,
+          "compress": false
+        },
+        "Inorganic_recyclables": {
+          "door": false,
+          "compress": false
+        },
+        "Non_recyclables_inorganic": {
+          "door": false,
+          "compress": false
+        }
+      }
+    }
+  ]
+}

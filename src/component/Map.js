@@ -1131,6 +1131,22 @@ function Map() {
     [markerIcon, markerIconWarning, markerIconFull, markerIconFullWarning]
   );
 
+  const handleStopCollection = () => {
+    if (routingControlRepair) {
+      mapRef.current.removeControl(routingControlRepair);
+      setRoutingControlRepair(null);
+    }
+    setArrayAllBinsSelected([]);
+    setSelectedTypes({
+      organic: false,
+      recyclable: false,
+      nonRecyclable: false,
+    });
+    setShowLocationCollectorAll(false);
+    setLocationUserAll({ latitude: '', longtitude: '' });
+    alert('Đã tắt thu gom và xóa tuyến đường.');
+  };
+
   const filteredCities = cities.filter((bin) => {
     if (
       !Object.values(selectedTypes).some((val) => val) ||
